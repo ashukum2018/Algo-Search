@@ -1,0 +1,1 @@
+Given a positive integer num, write a function which returns True if num is a perfect square else False. Follow up:</h4> Do not use any built-in library function such as sqrt. <br><h4>Example 1:</h4> <br><h4>Input:</h4> num = 16 <br><h4>Output:</h4> true <br><h4>Example 2:</h4> <br><h4>Input:</h4> num = 14 <br><h4>Output:</h4> false <br><h4>Constraints:</h4> 1 <= num <= 2^31 - 1

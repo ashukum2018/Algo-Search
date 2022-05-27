@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Algo Search</title>
+</head>
+<body>
+<nav>
+  <link rel="stylesheet" href="/styles.css">
+  <div class="site-title">
+    <a href="/"><h1>Algo Search</h1></a>
+    <p>A DSA Based Search Engine</p>
+  </div>
+  <!-- <ul>
+    <li><a href="/about">About</a></li>
+  </ul> -->
+</nav>
+  <div class="create-blog content">
+    <form>
+      <label for="title"><h3>Search Query:</h3></label>
+      <input type="text" id="title" name="title" required>
+      <button>Submit</button>
+    </form>
+  </div>
+  <br>
+    <div class="loading"></div>
+    <div class="results"></div>
+    <div class="question">
+      <div class="title"></div>
+      <div class="url">
+        <!-- <a href=""></a> -->
+      </div>
+      <div class="body"></div>
+    </div>
+    <div class="question">
+      <div class="title"></div>
+      <div class="url">
+        <!-- <a href=""></a> -->
+      </div>
+      <div class="body"></div>
+    </div>
+    <div class="question">
+      <div class="title"></div>
+      <div class="url">
+        <!-- <a href=""></a> -->
+      </div>
+      <div class="body"></div>
+    </div>
+    <div class="question">
+      <div class="title"></div>
+      <div class="url">
+        <!-- <a href=""></a> -->
+      </div>
+      <div class="body"></div>
+    </div>
+    <div class="question">
+      <div class="title"></div>
+      <div class="url">
+        <!-- <a href=""></a> -->
+      </div>
+      <div class="body"></div>
+    </div>
+<footer>
+  <link rel="stylesheet" href="/styles.css">
+  Copyright &copy; Ashutosh Kumar 2022
+</footer>
+</body>
+</html>
+<script>
+  const form = document.querySelector("form");
+  const questionElement = form.title;
+  const questions = document.querySelectorAll(".question");
+  const titles = document.querySelectorAll(".title");
+  const urls = document.querySelectorAll(".url");
+  const quesBody = document.querySelectorAll(".body");
+  const loadingDiv = document.querySelector(".loading");
+  const results=document.querySelector(".results");
+  //   console.log(questions);
+  //   console.log(titles);
+  //   console.log(urls);
+  //   console.log(quesBody);
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    let question = questionElement.value;
+    question=question.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+    question=question.replace(/\s{2,}/g," ");
+    console.log(question);
+    // question=question.replace(/[^\w\s\']|_/g, "");
+    // question=question.replace(/\s+/g, " ");
+    for (let i = 0; i < 5; i++) {
+      titles[i].innerHTML = ``;
+      urls[i].innerHTML = ``;
+      quesBody[i].innerHTML=``;
+      results.innerHTML=``;
+    }
+    loadingDiv.innerHTML = `Loading...`;
+    //fetch
+    try {
+      const res = await fetch(`/search?question=${question}`, {
+        method: "GET",
+      });
+      const data = await res.json();
+      loadingDiv.innerHTML = ``;
+      const cursor="Link";
+      let que_results="";
+      for(let i=0;i<10;i++){
+        // que_results+="<h4>"+data[i].title+"</h4>"+"<br>";
+        que_results+=`<a href="/problem?qid=${data[i].id}" target="_blank"><h3>${data[i].title}</h3></a><br>`;
+      }
+      results.innerHTML=`${que_results}`;
+      // for (let i = 0; i < 5; i++) {
+      //   titles[i].innerHTML = `<center><h3 id="colstrip">${data[i].title}</h3></center><br>`;
+      //   urls[i].innerHTML = `<a href=${data[i].url}>${cursor}</a><br>`;
+      //   let cur_state=data[i].statement;
+      //   // quesBody[i].innerHTML=`<h5>${cur_state}</h5>`;
+      //   quesBody[i].innerHTML=`<h4>Problem : </h4><p>${cur_state}</p><br>`;
+      //   // urls[i].setAttribute('href', data[i].url);
+      // }
+    } catch (error) {
+      alert(error);
+    }
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+

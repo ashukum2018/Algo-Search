@@ -1,0 +1,1 @@
+Given a string s, return the longest palindromic substring in s. <br><h4>Example 1:</h4> <br><h4>Input:</h4> s = "babad" <br><h4>Output:</h4> "bab" <br><h4>Explanation:</h4> "aba" is also a valid answer. <br><h4>Example 2:</h4> <br><h4>Input:</h4> s = "cbbd" <br><h4>Output:</h4> "bb" <br><h4>Constraints:</h4> 1 <= s.length <= 1000 s consist of only digits and English letters.

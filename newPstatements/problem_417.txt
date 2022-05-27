@@ -1,0 +1,1 @@
+Given an integer num, return a string of its base 7 representation. <br><h4>Example 1:</h4> <br><h4>Input:</h4> num = 100 <br><h4>Output:</h4> "202" <br><h4>Example 2:</h4> <br><h4>Input:</h4> num = -7 <br><h4>Output:</h4> "-10" <br><h4>Constraints:</h4> -107 <= num <= 107

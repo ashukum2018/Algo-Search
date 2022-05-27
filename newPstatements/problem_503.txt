@@ -1,0 +1,1 @@
+Given a non-negative integer c, decide whether there're two integers a and b such that a2 + b2 = c. <br><h4>Example 1:</h4> <br><h4>Input:</h4> c = 5 <br><h4>Output:</h4> true <br><h4>Explanation:</h4> 1 * 1 + 2 * 2 = 5 <br><h4>Example 2:</h4> <br><h4>Input:</h4> c = 3 <br><h4>Output:</h4> false <br><h4>Constraints:</h4> 0 <= c <= 231 - 1

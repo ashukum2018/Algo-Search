@@ -1,0 +1,1 @@
+Given an integer n, count the total number of digit 1 appearing in all non-negative integers less than or equal to n. <br><h4>Example 1:</h4> <br><h4>Input:</h4> n = 13 <br><h4>Output:</h4> 6 <br><h4>Example 2:</h4> <br><h4>Input:</h4> n = 0 <br><h4>Output:</h4> 0 <br><h4>Constraints:</h4> 0 <= n <= 109

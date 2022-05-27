@@ -1,0 +1,1 @@
+Given a text file file.txt, transpose its content. You may assume that each row has the same number of columns, and each field is separated by the ' ' character. <br><h4>Example:</h4> If file.txt has the following content:</h4> name age alice 21 ryan 30 <br><h4>Output the following:</h4> name alice ryan age 21 30

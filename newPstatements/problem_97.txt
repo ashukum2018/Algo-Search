@@ -1,0 +1,1 @@
+Given an integer n, return the number of structurally unique BST's (binary search trees) which has exactly n nodes of unique values from 1 to n. <br><h4>Example 1:</h4> <br><h4>Input:</h4> n = 3 <br><h4>Output:</h4> 5 <br><h4>Example 2:</h4> <br><h4>Input:</h4> n = 1 <br><h4>Output:</h4> 1 <br><h4>Constraints:</h4> 1 <= n <= 19

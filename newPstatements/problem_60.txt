@@ -1,0 +1,1 @@
+Given a positive integer n, generate an n x n matrix filled with elements from 1 to n2 in spiral order. <br><h4>Example 1:</h4> <br><h4>Input:</h4> n = 3 <br><h4>Output:</h4> [[1,2,3],[8,9,4],[7,6,5]] <br><h4>Example 2:</h4> <br><h4>Input:</h4> n = 1 <br><h4>Output:</h4> [[1]] <br><h4>Constraints:</h4> 1 <= n <= 20
