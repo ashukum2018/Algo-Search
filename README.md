@@ -7,5 +7,7 @@ Link to the website : [https://cp-ninja.herokuapp.com/questions](https://algo-he
 
 2) Now go to the current directory and install the dependencies mentioned in package.json by writing "npm install" on terminal.
 
-3.) Now you can run the code "nodemon app" to view the website on your local server.
+3.) Now you can run the website on your local server by writing "node app" on terminal.
+
+4.) You can type "localhost:3000" on your browser's address bar to view the website in local server.
 
