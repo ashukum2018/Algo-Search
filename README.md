@@ -1,7 +1,7 @@
 # Algo-Search
 Algo Search is a Data Structures and Algorithms Based search Engine developed using cosine similarity algorithm. Node Js is used as a backend language and HTML, CSS, JavaScript were used for the frotend.
 
-Link to the website : [https://cp-ninja.herokuapp.com/questions](https://algo-helper.herokuapp.com/)
+Link to the website : [https://algo-helper.herokuapp.com/]
 
 1) Download the .zip file to your local system and extract it.
 
