@@ -48,10 +48,10 @@ keywords= new Map();
 function make_keywords(){
   var text=fs.readFileSync("./keywords.txt", "utf-8");
   var data=text.split("\n");
-  // for(let i=0;i<data.length;i++){
-  //   data[i]=data[i].slice(0, -1);
-  //   // console.log(data);
-  // }
+  for(let i=0;i<data.length;i++){
+    data[i]=data[i].slice(0, -1);
+    // console.log(data);
+  }
   // console.log(data);
   for(let i=0;i<(data.length)-1;i++){
     keywords.set(String(data[i]), i);
