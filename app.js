@@ -181,7 +181,7 @@ function make_urls(){
   var text=fs.readFileSync("./problem_urls.txt", "utf-8");
   var data=text.split("\n");
   for(let i=0;i<data.length;i++){
-    data[i]=data[i].slice(0,-1);
+    // data[i]=data[i].slice(0,-1);
     urls.push(data[i]);
   }
 }
